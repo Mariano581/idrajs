@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F6F3;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFADAD;
+}
+
+tr:nth-child(even) {
+    background-color: #FFD6A5;
+}
+
+button {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.ver-button {
+    background-color: #6eddff;
+}
+
+button.borrar-button {
+    background-color: #D63031;
+}
+
+button.guardar-button {
+    background-color: #55EFC4;
+}
+
+button.ver-button:hover {
+    background-color: #7852ff;
+}
+
+button.borrar-button:hover {
+    background-color: #FF3031;
+}
+
+button.guardar-button:hover {
+    background-color: #3ACB98;
+}
+
+input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #FF7675;
+    outline: none;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FF7675;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FF7675;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#botonAlta,
+#botonBaja {
+    margin-bottom: 10px;
+}
+
+tfoot button {
+    background-color: #74D69F;
+}
+
+tfoot button:hover {
+    background-color: #64C98C;
+}

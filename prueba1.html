@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Tabla de Docentes</title>
+</head>
+
+<body>
+    <h1>Curso Intensivo JS</h1>
+    <button id="botonAlta">Alta</button>
+    <button id="botonBaja" onclick="cambiarNombre()">Baja</button>
+    <br>
+    <br>
+
+    <h2>Tabla de Docentes</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot>
+            <tr>
+                <td><input id="nombre" placeholder="Nombre" /></td>
+                <td><input id="apellido" placeholder="Apellido" /></td>
+                <td><button onclick="guardar()" class="guardar-button">GUARDAR</button></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        function guardar() {
+            var tbody = document.getElementById('tbody')
+            var fila = tbody.insertRow()
+            var celda = fila.insertCell()
+            celda.innerHTML = document.getElementById('nombre').value
+            celda = fila.insertCell()
+            celda.innerHTML = document.getElementById('apellido').value
+            celda = fila.insertCell()
+            celda.innerHTML = "<button class='ver-button'>VER</button>"
+            celda = fila.insertCell()
+            celda.innerHTML = "<button class='borrar-button'>BORRAR</button>"
+            document.getElementById('nombre').value = ""
+            document.getElementById('apellido').value = ""
+        }
+    </script>
+</body>
+
+</html>
